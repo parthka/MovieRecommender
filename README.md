@@ -53,7 +53,6 @@ Once we have this metadata from the Discover library, we can use the JSON result
 #### I'm going to declare a shell for the DataFrame that will house the information from the movie API call, then for each loop, make a new record in the DataFrame based on features I'd like to pull back:  
 ```python
 columns = ['tmdb_id', 'imdb_id', 'title', 'budget', 'revenue', 'release_date', 'release_year', 'genres', 'overview']
-# columns = ['tmdb_id', 'imdb_id', 'title', 'budget', 'revenue', 'release_date']
 movies_df = pd.DataFrame(columns=columns)
 ```
 ```python
@@ -309,7 +308,7 @@ After doing so, we are left with 9,650 movies:
 <p>9650 rows × 10 columns</p>
 </div>
   
-### The next part is to start preprocessing for our text data. [Lemmatization](https://en.wikipedia.org/wiki/Lemmatisation) is the process of removing inflections to return a word to its root form. This way, similar words can be analysed as a single item, as identified by the word's lemma. For reference, see the table below:
+### The next part is to start preprocessing for our text data. [Lemmatization](https://en.wikipedia.org/wiki/Lemmatisation) is the process of removing inflections to return a word to its root form. This way, similar words can be analysed as a single item, as identified by the word's lemma. For reference, see the table below:  
 Original Word | Word Lemma
 ------------ | -------------
 Copied | Copy
