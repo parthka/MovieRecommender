@@ -495,11 +495,6 @@ with open("../Data/movie_similarities.npy", 'wb') as npy:
 ```
 
 
-```python
-with open("../Data/movie_similarities.npy", 'rb') as npy:
-    cosine_similarities = np.load(npy)
-```
-
 ## Inspect our results  
 **The last part is to build a function to get recommendations for each movie, and review the results:**
 ```python
