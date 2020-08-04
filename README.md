@@ -325,12 +325,13 @@ After doing so, we are left with 9,650 movies:
 <p>9650 rows × 10 columns</p>
 </div>
   
-### The next part is to start preprocessing for our text data. [Lemmatization](https://en.wikipedia.org/wiki/Lemmatisation) is the process of removing inflections to return a word to its root form. This way, similar words can be analysed as a single item, as identified by the word's lemma. For reference, see the table below:  
-Original Word | Word Lemma
------------- | -------------
-Copied | Copy
-Copying | Copy
-Copies | Copy
+### The next part is to start preprocessing for our text data. [Lemmatization](https://en.wikipedia.org/wiki/Lemmatisation) is the process of removing inflections to return a word to its root form. This way, similar words can be analysed as a single item, as identified by the word's lemma. For reference, see the table below:
+  
+| Original Word | Word Lemma |
+| ------------- | ---------- |
+| Copied        | Copy       |
+| Copying       | Copy       |
+| Copies        | Copy       |
   
 Let's go ahead and lemmatize our data. First, we'll build a function to recognize parts of speech for each text, and lemma each word based on their part of speech tag:
 ```python
