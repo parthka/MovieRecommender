@@ -719,7 +719,7 @@ recommend('Mission: Impossible II')[:20]
 **However, upon further inspection, I noticed that I was using a 9,650 x 9,650 2D Numpy array inside the recommend function. This is an incredibly large file, and would be hard to serve over the web without bogging down memory resources. I'm going to recreate the top 20 suggestions for each movie, save them to a dictionary with an index representation of each movie and their similarity. This will be used to get the recommendations on our web application.**
 
 ## Build recommender function
-Below, I create a dictionary that takes the index value for each movie as the key, with the indexes of the top 20 most similar movies based on the cosine similarity between their key words and genres for each movie as the dectionary values.
+Below, I create a dictionary that takes the index value for each movie as the key, with the indexes of the top 20 most similar movies based on the cosine similarity between their key words and genres for each movie as the dictionary values.
 ```python
 recommender_dict = {}
 for i in range (len(tmdf1)):
@@ -1121,7 +1121,8 @@ I'll just showcase the app.py file to build the Flask app. In it, I do a few thi
 - Build helper functions to:  
     - Populate a list of movies within the search bar  
     - Get the overview, IMDB ID and title of the movie requested to serve as a summary before recommendations  
-    - And of course, the recommend function created earlier
+    - And of course, the recommend function created earlier  
+  
 ```python
 from flask import Flask, render_template, request, Response
 import pandas as pd
