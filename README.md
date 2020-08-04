@@ -3,7 +3,7 @@
  as well as basic information about a movie such as the date it was released and a brief synopsis.***
 
 In this project, I am going to build a movie recommendation app using data pulled back from TMDB.  
-TMDB has a robust API that is free to use for small sized projects. It has information on movies and TV shows. I will limit myself to movies made in 2000 or later. Using overviews of movies from TMDB, I will build recommendations for movies based on similarities (ising natural language processing or NLP) in the text used to describe a movie along with their genres. These recommendations will then all be served in a RESTful API built in Flask. The flask web app I built is located here:
+TMDB has a robust API that is free to use for small sized projects. It has information on movies and TV shows. I will limit myself to movies made in 2000 or later. Using overviews of movies from TMDB, I will build recommendations for movies based on similarities (using natural language processing or NLP) in the text used to describe a movie along with their genres. These recommendations will then all be served in a RESTful API built in Flask. The flask web app I built is located here:
 ### [Get Movie Recommendations](https://modern-movie-recommender.ue.r.appspot.com/)  
 Below is a guide of all the steps involved in this end-to-end project. I won't go super in-depth on describing the methods or techniques, this is moreso showcasing how to replicate the work if you'd like to solve a similar problem.
   
@@ -1096,7 +1096,6 @@ recommend('Mission: Impossible II')
     </tr>
   </tbody>
 </table>
-</div>
 
 ### **It worked! Time do build a flask app and deploy.**
 
