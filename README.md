@@ -139,7 +139,7 @@ movies_df.to_pickle('../Data/movies_df.pkl')
   
 ## Creating Our Recommendation Data  
 ***To make accurate recommendations, we'll be using a few different NLP techniques to clean and vectorize overviews for each movie, and use the keywords from each overview along with the genres to make movie recommendations***  
-Before I go any further, I want to make sure that I will have good data to make recommendations with. So I'm going to limit to movies that have a genre, as well as minimum length for the overview. I'm also using the IMDB ID as a tag for whether the data on a movie is reliable on, with the assumption that movies without one do not have reliable information.
+Before I go any further, I want to make sure that I will have good data to make recommendations with. So I'm going to limit to movies that have a genre, as well as minimum length for the overview. I'm also using the IMDB ID as an indicator for whether the data for the specifc movie is reliable or not, with the assumption that movies without one do not have reliable information.
 ```python
 tmdb_df = pd.read_pickle('../Data/movies_df.pkl')
 ```
